@@ -56,7 +56,7 @@ pipeline{
                     }
                  }
 		 
-		stage('ansible playbook'){
+	/*	stage('ansible playbook'){
 			steps{
 			 	script{
 				    sh '''final_tag=$(echo $Docker_tag | tr -d ' ')
@@ -66,7 +66,7 @@ pipeline{
 				    ansiblePlaybook become: true, installation: 'ansible', inventory: 'hosts', playbook: 'ansible.yaml'
 				}
 			}
-		}
+		} */
 		
 	
 		
